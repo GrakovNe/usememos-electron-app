@@ -1,4 +1,4 @@
-# Simple one-feature electron wrapper for the https://www.usememos.com/ project
+## Simple one-feature electron wrapper for the https://www.usememos.com/ project
 
 I don't like the https://memos.moe/ UI and couldn't find another native MacOS app for this amazing notes project, so i've decided to build up my own
 
@@ -7,7 +7,7 @@ Nothing more, nothing less
 
 MIT Licence as well as UseMemos itself
 
-# Building
+## Building
 
 1. Fork this project
 2. In the main.js file chane URL to your favorite UseMemos Instance from https://memo.grakovne.org
