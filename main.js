@@ -11,7 +11,7 @@ async function createWindow() {
   const win = new BrowserWindow({
     width: savedBounds.width,
     height: savedBounds.height,
-    title: "GrakovNe Memo",
+    title: "Memos",
     webPreferences: {
       nodeIntegration: false,
     },

@@ -1,5 +1,5 @@
 {
-  "name": "grakovne_memo",
+  "name": "grakovne_memos",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -18,7 +18,7 @@
     "electron-store": "^10.0.0"
   },
   "build": {
-    "productName": "GrakovNe Memo",
+    "productName": "Memos",
     "appId": "org.grakovne.electron.usememos",
     "mac": {
       "target": "dmg",
