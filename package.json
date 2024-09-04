@@ -1,0 +1,31 @@
+{
+  "name": "grakovne_memo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "dist": "electron-builder --mac"
+  },
+  "author": "grakovne",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^32.0.1",
+    "electron-builder": "^25.0.5"
+  },
+  "dependencies": {
+    "electron-store": "^10.0.0"
+  },
+  "build": {
+    "productName": "GrakovNe Memo",
+    "appId": "org.grakovne.electron.usememos",
+    "mac": {
+      "target": "dmg",
+      "icon": "resources/icon.icns"
+    },
+    "directories": {
+      "output": "release-builds"
+    }
+  }
+}
