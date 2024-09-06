@@ -1,5 +1,6 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
+const { shell } = require('electron');
 
 async function createWindow() {
   const Store = (await import('electron-store')).default;
@@ -33,6 +34,18 @@ async function createWindow() {
       clearTimeout(failTimeout);
       win.loadFile(path.join(__dirname, 'error.html'));
       win.show();
+    }
+  });
+
+  win.webContents.setWindowOpenHandler(({ url }) => {
+    shell.openExternal(url);
+    return { action: 'deny' };
+  });
+
+  win.webContents.on('will-navigate', (event, url) => {
+    if (url !== win.webContents.getURL()) {
+      event.preventDefault();
+      shell.openExternal(url);
     }
   });
 
